@@ -1,4 +1,23 @@
-const sumAll = function() {
+const sumAll = function(first, second) {
+    if(first < 0 || second < 0)
+        return 'ERROR';
+
+    let sum = 0;
+    let temp;
+
+    if(first > second)
+    {
+        temp = first;
+        first = second;
+        second = temp;
+    }
+
+    for(let i = first; i <= second; i++)
+    {
+        sum +=i;
+    }
+
+    return sum;
 
 };
 
