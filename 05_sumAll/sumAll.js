@@ -1,6 +1,9 @@
 const sumAll = function(first, second) {
     if(first < 0 || second < 0)
         return 'ERROR';
+    
+    if(!Number.isInteger(first) || !Number.isInteger(second))
+        return 'ERROR';
 
     let sum = 0;
     let temp;
