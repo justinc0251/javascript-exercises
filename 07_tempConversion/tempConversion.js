@@ -1,3 +1,5 @@
+// Rounds temperature after multiplying by 10, then divides by 10 after rounding in order to get decimal.
+
 const ftoc = function(f) {
   return Math.round((f - 32) * (5/9) * 10) / 10;
 };
