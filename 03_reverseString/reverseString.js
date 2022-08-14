@@ -1,4 +1,5 @@
 const reverseString = function(string) {
+    // Return new string by adding each character starting from the end
     let newString = "";
     for(let i = string.length-1; i >= 0; i--)
     {
